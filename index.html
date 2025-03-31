@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alena Lovely</title>
+
+    <link rel="icon" type="image/png" href="./love.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=My+Soul&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --font: "My Soul", Arial;
+            --shadow: drop-shadow(15px 15px 15px #571010);
+        }
+
+        * {
+            user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-select: none;
+            -ms-touch-select: none;
+            -moz-window-dragging: no-drag;
+            -webkit-user-drag: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(rgb(215, 82, 102), rgb(147, 26, 50));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .postcard {
+            width: 100vw;
+            height: 100vh;
+            font-family: var(--font);
+            font-weight: 700;
+            font-size: 50px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .postcard div[data-depth] {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .postcard div:nth-child(2) {
+            rotate: 15deg;
+            font-size: 100px;
+        }
+
+        .love {
+            width: 25%;
+            min-width: 300px;
+
+            -webkit-filter: var(--shadow);
+            filter: var(--shadow);
+        }
+
+        .mylove {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            font-family: var(--font);
+            font-size: 100px;
+            color: white;
+        }
+
+        .inheart {
+            position: absolute;
+            width: 100%;
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        .author {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            font-size: 25px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="mylove">Alena</div>
+
+    <div class="postcard" data-tilt>
+        <div class="inheart">
+            <div>i</div>
+            <div>love</div>
+            <div>u</div>
+        </div>
+
+        <img alt="" class="love" src="./love.png">
+    </div>
+
+    <div class="author">defriz</div>
+
+    <script src="./tilt.min.js"></script>
+</body>
+</html>
