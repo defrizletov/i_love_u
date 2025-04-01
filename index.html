@@ -15,7 +15,7 @@
     <style>
         :root {
             --font: "My Soul", Arial;
-            --shadow: drop-shadow(15px 15px 15px #571010);
+            --shadow: drop-shadow(0 0 15px #000000);
         }
 
         * {
@@ -24,8 +24,10 @@
             -ms-user-select: none;
             -webkit-user-select: none;
             -ms-touch-select: none;
+
             -moz-window-dragging: no-drag;
             -webkit-user-drag: none;
+
             overflow: hidden;
             margin: 0;
             padding: 0;
@@ -43,10 +45,13 @@
         .postcard {
             width: 100vw;
             height: 100vh;
+
             font-family: var(--font);
             font-weight: 700;
             font-size: 50px;
+
             color: white;
+
             display: flex;
             justify-content: center;
             align-items: center;
@@ -92,8 +97,9 @@
 
         .author {
             position: absolute;
-            bottom: 5px;
-            right: 10px;
+            right: 1vw;
+            bottom: 1vh;
+            font-family: 'Courier New', Courier, monospace;
             font-size: 25px;
             color: black;
         }
@@ -109,7 +115,7 @@
             <div>u</div>
         </div>
 
-        <img alt="" class="love" src="./love.png">
+        <img class="love" src="./love.png">
     </div>
 
     <div class="author">defriz</div>
